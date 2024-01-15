@@ -34,6 +34,7 @@ class Ntp < Formula
       --with-openssl-libdir=#{Formula["openssl@3"].lib}
       --with-openssl-incdir=#{Formula["openssl@3"].include}
       --with-net-snmp-config=no
+      --mandir=#{man}
     ]
 
     system "./configure", *args
